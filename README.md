@@ -51,5 +51,4 @@ Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab
 - `FordGoBike_2018_EDA.ipynb` - Full analysis notebook
 - `README.md` - Project overview
 
-## Author
-[Your Name]
+
