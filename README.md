@@ -1,5 +1,11 @@
 # Ford GoBike 2018 - Exploratory Data Analysis
 
+## TL;DR
+Ford GoBike's 2018 data (1.86M trips) shows a commuter-driven platform: Subscribers ride 
+short trips at rush hour on weekdays; Customers ride longer, mostly on weekends/summer. 
+Recommendation: protect peak-hour bike availability, convert seasonal Customers into 
+Subscribers, and close demographic data gaps.
+
 ## Project Summary
 This project performs Exploratory Data Analysis (EDA) on Ford GoBike's 2018 trip data, 
 covering all 12 months (~1.86 million trips) across the San Francisco Bay Area. It analyzes 
@@ -28,7 +34,9 @@ time, demographics, and location to support data-driven business decisions.
 2. Cleaned data (missing values, duplicates, incorrect types, invalid ages)
 3. Engineered features: month, day, hour, trip duration (minutes), age, age group, weekend flag
 4. Performed EDA using 21 visualizations following the Univariate-Bivariate-Multivariate (UBM) framework
-5. Derived insights and business recommendations
+5. Validated key findings with a statistical t-test (Subscriber vs Customer trip duration)
+6. Built a logistic regression model to test predictive power of trip features on user type
+7. Derived insights and business recommendations
 
 ## Key Insights
 - Usage is commuter-driven: Subscribers dominate weekday trips with peaks at 8-9 AM and 5-6 PM
@@ -36,7 +44,7 @@ time, demographics, and location to support data-driven business decisions.
 - Riders are concentrated in the 25-40 age range and skew male
 - A small number of transit-hub stations drive most trips
 - User type (Subscriber vs Customer) is the strongest behavioral differentiator - stronger 
-  than age, hour, or location
+  than age, hour, or location, confirmed via t-test (p < 0.05)
 
 ## Recommendations
 - Prioritize bike availability during commute peaks at high-traffic stations
@@ -45,10 +53,12 @@ time, demographics, and location to support data-driven business decisions.
 - Improve signup data collection to close demographic data gaps
 
 ## Tools Used
-Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab
+Python, Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn, Google Colab
 
 ## Files
 - `FordGoBike_2018_EDA.ipynb` - Full analysis notebook
+- `FordGoBike_EDA_Report.docx` - Detailed report
 - `README.md` - Project overview
 
-
+## Author
+S Purvi Prathyusha
