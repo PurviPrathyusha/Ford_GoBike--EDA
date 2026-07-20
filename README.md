@@ -57,7 +57,7 @@ Python, Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn, Google Colab
 
 ## Files
 - `FordGoBike_2018_EDA.ipynb` - Full analysis notebook
-- `FordGoBike_EDA_Report.docx` - Detailed report
+- `FordGoBike_EDA_Report.pdf` - Detailed report
 - `README.md` - Project overview
 
 ## Author
